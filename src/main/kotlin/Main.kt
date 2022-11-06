@@ -1,7 +1,7 @@
 import java.io.File
 
 fun main() {
-    val inStream = File("C:\\Users\\maxz7\\programming_projects\\UselessMethods\\src\\main\\kotlin\\Main.kt").inputStream()
+    val inStream = File("Main.kt").inputStream()
     val code = inStream.bufferedReader().use { it.readText() }
     println(code)
     println("Are { } fine? " + areBracketsFine(code, '{', '}').toString())
